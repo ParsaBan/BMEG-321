@@ -45,8 +45,8 @@ AudioFFT = fft(audioSample);
 figure(3);
 plot(AudioFFT)
 title('Imaginary and Real Component of the FFT of the Audio Signal');
-xlabel('Frequency (10^4 Hz)');
-ylabel('Amplitude of the both Components');
+xlabel('Amplitude of the Real Component');
+ylabel('Amplitude of the Imaginary Component');
 %Designing a frequency axis
 freqAxis = (0:length(audioSample)-1)*44100/length(audioSample);
 %Real Component
